@@ -4,16 +4,46 @@ server:
 spring:
   application:
     name: service-order
+  profiles:
+    active: 528eb94d-fb07-4fe6-8d02-66e1a41000e7  #命名空间ID
 
   cloud:
     nacos:
       server-addr: 127.0.0.1:8848
       config:
-        namespace: ef13cb2e-8ef5-4d15-8bdd-5ef11c497d36  #命名空间ID
+        import-check:
+          enabled: false
+        namespace: ${spring.profiles.active}  #命名空间ID
 
+---
+spring:
   config:
     import:
       - nacos:common.properties?group=order
       - nacos:database.properties?group=order
+    activate:
+      on-profile:  528eb94d-fb07-4fe6-8d02-66e1a41000e7  # dev 命名空间ID
+
+---
+spring:
+  config:
+    import:
+      - nacos:common.properties?group=order
+      - nacos:database.properties?group=order
+      - nacos:haha.properties?group=order
+    activate:
+      on-profile:  ef13cb2e-8ef5-4d15-8bdd-5ef11c497d36    # fat 命名空间ID
+
+---
+spring:
+  config:
+    import:
+      - nacos:common.properties?group=order
+      - nacos:database.properties?group=order
+      - nacos:hehe.properties?group=order
+    activate:
+      on-profile:  38ed6839-136b-4352-8984-4d55703fee79   # prod 命名空间ID
+
+
 
 

@@ -1,5 +1,6 @@
 package com.spring.order.service.impl;
 
+import com.spring.order.feign.ProductFeignClient;
 import com.spring.order.config.OrderConfig;
 import com.spring.order.order.bean.Order;
 import com.spring.order.product.bean.Product;
@@ -28,9 +29,14 @@ public class OrderServiceImpl implements OrderService {
     @Resource
     private LoadBalancerClient loadBalancerClient;
 
+    @Resource
+    private ProductFeignClient productFeignClient;
+
     @Override
     public Order createOrder(String productId, String userId) {
-        Product product = this.queryByProductIdWithLoadBalanceAnnotation(productId);
+        // Product product = this.queryByProductIdWithLoadBalanceAnnotation(productId);
+        String token = "1111";
+        Product product = productFeignClient.queryByProductId(productId, token);
         BigDecimal totalAmount = product.getPrice().multiply(new BigDecimal(product.getNum()));
         Order order = new Order();
         order.setId(0L);

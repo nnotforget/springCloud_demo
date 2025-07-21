@@ -8,10 +8,13 @@ import org.springframework.boot.ApplicationRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+import org.springframework.cloud.openfeign.EnableFeignClients;
 import org.springframework.context.annotation.Bean;
 
 //TIP 要<b>运行</b>代码，请按 <shortcut actionId="Run"/> 或
 // 点击装订区域中的 <icon src="AllIcons.Actions.Execute"/> 图标。
+
+@EnableFeignClients //开启openFeign 远程调用功能
 @SpringBootApplication
 @EnableDiscoveryClient
 public class OrderMainApplication {

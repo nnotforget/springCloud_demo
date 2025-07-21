@@ -19,11 +19,11 @@ public class ProductServiceImpl implements ProductService {
         product.setPrice(new BigDecimal("99"));
         product.setNum(2);
 
-        try {
-            TimeUnit.SECONDS.sleep(100);  //测试 超时， 100秒
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
+//        try {
+//            TimeUnit.SECONDS.sleep(100);  //测试 超时， 100秒
+//        } catch (InterruptedException e) {
+//            throw new RuntimeException(e);
+//        }
         return product;
     }
 }

@@ -11,3 +11,5 @@ spring:
             logger-level: full
             connect-timeout: 3000
             read-timeout: 5000
+#            request-interceptors:
+#              - com.spring.order.interceptor.XTokenRequestInterceptor  # 指定单个 openFeignClient 拦截器

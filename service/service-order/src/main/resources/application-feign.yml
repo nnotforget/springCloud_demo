@@ -3,11 +3,11 @@ spring:
     openfeign:
       client:
         config:
-          default :
+          default :  # 默认超时设置
               logger-level: full
               connect-timeout: 1000
               read-timeout: 2000
-          product-feignClient :
+          product-feignClient :  # 指定openFeignClient超时设置
             logger-level: full
             connect-timeout: 3000
             read-timeout: 5000

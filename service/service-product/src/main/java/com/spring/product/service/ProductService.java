@@ -1,4 +1,4 @@
-package com.spring.order.service;
+package com.spring.product.service;
 
 
 import com.spring.order.product.bean.Product;

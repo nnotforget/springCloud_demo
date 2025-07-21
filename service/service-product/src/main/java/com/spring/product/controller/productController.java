@@ -1,7 +1,7 @@
-package com.spring.order.controller;
+package com.spring.product.controller;
 
 import com.spring.order.product.bean.Product;
-import com.spring.order.service.ProductService;
+import com.spring.product.service.ProductService;
 import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.PathVariable;

@@ -6,6 +6,7 @@ spring:
     name: service-order
   profiles:
     active: 38ed6839-136b-4352-8984-4d55703fee79  #命名空间ID
+    include: feign  # 引入 application-feign.yml 文件
 
   cloud:
     nacos:

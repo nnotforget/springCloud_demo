@@ -13,3 +13,7 @@ spring:
             read-timeout: 5000
 #            request-interceptors:
 #              - com.spring.order.interceptor.XTokenRequestInterceptor  # 指定单个 openFeignClient 拦截器
+
+feign:
+  sentinel:
+    enabled: true   # 开启sentinel 服务熔断

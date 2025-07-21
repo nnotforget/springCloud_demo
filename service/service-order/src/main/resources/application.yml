@@ -15,6 +15,10 @@ spring:
           enabled: false
         namespace: ${spring.profiles.active:public}  #命名空间ID   public-默认启动空间
 
+logging:
+  level:
+    com.spring.order.feign : debug   # 包路径 下的 日志级别
+
 ---
 spring:
   config:

@@ -9,6 +9,10 @@ import jakarta.servlet.http.HttpServletResponse;
 import java.io.PrintWriter;
 import org.springframework.stereotype.Component;
 
+/**
+ * 自定义限流异常处理
+ * 适用于 controller 层，统一处理的兜底 返回数据信息
+ */
 @Component
 public class OrderBlockExceptionHandler implements BlockExceptionHandler {
 

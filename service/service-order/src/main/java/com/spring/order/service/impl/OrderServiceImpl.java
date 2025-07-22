@@ -1,6 +1,7 @@
 package com.spring.order.service.impl;
 
 import com.alibaba.csp.sentinel.annotation.SentinelResource;
+import com.alibaba.csp.sentinel.slots.block.BlockException;
 import com.spring.order.feign.ProductFeignClient;
 import com.spring.order.config.OrderConfig;
 import com.spring.order.order.bean.Order;
@@ -34,7 +35,7 @@ public class OrderServiceImpl implements OrderService {
     @Resource
     private ProductFeignClient productFeignClient;
 
-    @SentinelResource(value = "createOrder")
+    @SentinelResource(value = "createOrder", blockHandler = "createOrderFallBack")
     @Override
     public Order createOrder(String productId, String userId) {
         // Product product = this.queryByProductIdWithLoadBalanceAnnotation(productId);
@@ -48,6 +49,25 @@ public class OrderServiceImpl implements OrderService {
         order.setNickName("姓名-张三");
         order.setAddress("河北省廊坊市");
         order.setProductList(Collections.singletonList(product));
+        return order;
+    }
+
+    /**
+     * 用于 @SentinelResource 注解的 fallback 方法
+     *
+     * @param productId
+     * @param userId
+     * @param e
+     * @return
+     */
+    public Order createOrderFallBack(String productId, String userId, BlockException e) {
+        log.error("createOrderFallBack:{}", e.getMessage());
+        Order order = new Order();
+        order.setId(0L);
+        order.setTotalAmount(new BigDecimal(0));
+        order.setUserId(Long.parseLong(userId));
+        order.setNickName("未知商品");
+        order.setAddress("未知地址");
         return order;
     }
 

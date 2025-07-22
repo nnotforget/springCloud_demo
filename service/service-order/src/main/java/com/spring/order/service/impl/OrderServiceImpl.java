@@ -1,5 +1,6 @@
 package com.spring.order.service.impl;
 
+import com.alibaba.csp.sentinel.annotation.SentinelResource;
 import com.spring.order.feign.ProductFeignClient;
 import com.spring.order.config.OrderConfig;
 import com.spring.order.order.bean.Order;
@@ -10,6 +11,7 @@ import java.math.BigDecimal;
 import com.spring.order.service.OrderService;
 import java.util.Collections;
 import java.util.List;
+import java.util.UUID;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.cloud.client.discovery.DiscoveryClient;
@@ -32,10 +34,11 @@ public class OrderServiceImpl implements OrderService {
     @Resource
     private ProductFeignClient productFeignClient;
 
+    @SentinelResource(value = "createOrder")
     @Override
     public Order createOrder(String productId, String userId) {
         // Product product = this.queryByProductIdWithLoadBalanceAnnotation(productId);
-        String token = "1111";
+        String token = UUID.randomUUID().toString();
         Product product = productFeignClient.queryByProductId(productId, token);
         BigDecimal totalAmount = product.getPrice().multiply(new BigDecimal(product.getNum()));
         Order order = new Order();

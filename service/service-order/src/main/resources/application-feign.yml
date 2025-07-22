@@ -11,8 +11,13 @@ spring:
             logger-level: full
             connect-timeout: 3000
             read-timeout: 5000
+    sentinel :
+      transport:
+        dashboard: localhost:8080
+      eager: true  # 取消懒加载
 #            request-interceptors:
 #              - com.spring.order.interceptor.XTokenRequestInterceptor  # 指定单个 openFeignClient 拦截器
+
 
 feign:
   sentinel:

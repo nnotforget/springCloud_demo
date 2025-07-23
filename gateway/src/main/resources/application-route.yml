@@ -10,3 +10,19 @@ spring:
           uri: lb://service-product
           predicates:
             - Path=/api/product/**
+# 自定义断言规则  http://cn.bing.com?q=haha&user=li-shan
+        - id: bing-route
+          uri: https://cn.bing.com
+          predicates:
+            - name : Path
+              args:
+                patterns: /search
+            - name : Query
+              args:
+                  param: q
+                  regex: haha
+      #      - Vip=user, li-shan
+            - name : Vip
+              args:
+                  param: user
+                  value: li-shan

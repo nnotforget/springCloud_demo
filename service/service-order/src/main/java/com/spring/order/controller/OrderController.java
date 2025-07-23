@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 //@RefreshScope   //自动刷新
-@RequestMapping("/api/order")
+//@RequestMapping("/api/order")   // 通过gateway网关 过滤器实现
 @RestController
 public class OrderController {
 

@@ -6,23 +6,28 @@ spring:
           uri: lb://service-order
           predicates:
             - Path=/api/order/**
+          filters:
+            - RewritePath=/api/order/(?<segment>.*), /${segment}   # 过滤器-路径重写
+            - AddResponseHeader=X-Response-Token-Foo, token-Bar
         - id: product-route
           uri: lb://service-product
           predicates:
             - Path=/api/product/**
-# 自定义断言规则  http://cn.bing.com?q=haha&user=li-shan
+          filters:
+            - RewritePath=/api/product/(?<segment>.*), /${segment}  # 过滤器-路径重写
+        # 自定义断言规则  http://cn.bing.com?q=haha&user=li-shan
         - id: bing-route
           uri: https://cn.bing.com
           predicates:
-            - name : Path
+            - name: Path
               args:
                 patterns: /search
-            - name : Query
+            - name: Query
               args:
-                  param: q
-                  regex: haha
-      #      - Vip=user, li-shan
-            - name : Vip
+                param: q
+                regex: haha
+            #      - Vip=user, li-shan
+            - name: Vip
               args:
-                  param: user
-                  value: li-shan
+                param: user
+                value: li-shan

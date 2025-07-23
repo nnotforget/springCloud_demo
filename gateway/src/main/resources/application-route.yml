@@ -8,7 +8,7 @@ spring:
             - Path=/api/order/**
           filters:
             - RewritePath=/api/order/(?<segment>.*), /${segment}   # 过滤器-路径重写
- #           - AddResponseHeader=X-Response-Token-Foo, token-Bar
+        #           - AddResponseHeader=X-Response-Token-Foo, token-Bar
         - id: product-route
           uri: lb://service-product
           predicates:
@@ -33,4 +33,4 @@ spring:
                 value: li-shan
 
       default-filters:
-        - AddResponseHeader=X- Response-Default-Foo,Bar  # 全局添加响应头
+        - AddResponseHeader=X-Response-Default-Foo,Bar  # 全局添加响应头

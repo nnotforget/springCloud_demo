@@ -8,8 +8,8 @@ spring:
             - Path=/api/order/**
           filters:
             - RewritePath=/api/order/(?<segment>.*), /${segment}   # 过滤器-路径重写
-            - Token=X-Response-Token, uuid
-        #           - AddResponseHeader=X-Response-Token-Foo, token-Bar  #添加AddResponseHeader 过滤器
+            - Token=X-Response-Token, jwt  # 添加自定义过滤器-Token
+        #           - AddResponseHeader=X-Response-Token-Foo, token-Bar  # 添加AddResponseHeader 过滤器
         - id: product-route
           uri: lb://service-product
           predicates:

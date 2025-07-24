@@ -1,6 +1,6 @@
-package com.spring.order.order.bean;
+package com.spring.order.bean;
 
-import com.spring.order.product.bean.Product;
+import com.spring.product.bean.Product;
 import java.math.BigDecimal;
 import java.util.List;
 import lombok.Data;

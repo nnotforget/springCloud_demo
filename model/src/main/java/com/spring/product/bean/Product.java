@@ -1,4 +1,4 @@
-package com.spring.order.product.bean;
+package com.spring.product.bean;
 
 import java.math.BigDecimal;
 import lombok.Data;

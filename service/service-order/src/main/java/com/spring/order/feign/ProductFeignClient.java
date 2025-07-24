@@ -1,7 +1,7 @@
 package com.spring.order.feign;
 
 import com.spring.order.feign.fallback.ProductFeignFallBack;
-import com.spring.order.product.bean.Product;
+import com.spring.product.bean.Product;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;

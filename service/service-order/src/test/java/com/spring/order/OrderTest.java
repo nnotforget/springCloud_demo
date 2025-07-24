@@ -1,7 +1,5 @@
 package com.spring.order;
 
-import com.alibaba.nacos.shaded.io.grpc.LoadBalancer;
-import com.spring.order.order.bean.Order;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;

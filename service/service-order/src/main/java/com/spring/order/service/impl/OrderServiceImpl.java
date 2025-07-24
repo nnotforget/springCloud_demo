@@ -4,8 +4,8 @@ import com.alibaba.csp.sentinel.annotation.SentinelResource;
 import com.alibaba.csp.sentinel.slots.block.BlockException;
 import com.spring.order.feign.ProductFeignClient;
 import com.spring.order.config.OrderConfig;
-import com.spring.order.order.bean.Order;
-import com.spring.order.product.bean.Product;
+import com.spring.order.bean.Order;
+import com.spring.product.bean.Product;
 import jakarta.annotation.Resource;
 import java.math.BigDecimal;
 

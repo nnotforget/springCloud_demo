@@ -1,11 +1,10 @@
 package com.spring.product.controller;
 
-import com.spring.order.product.bean.Product;
+import com.spring.product.bean.Product;
 import com.spring.product.service.ProductService;
 import jakarta.annotation.Resource;
 import jakarta.servlet.http.HttpServletRequest;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.web.HttpRequestHandler;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

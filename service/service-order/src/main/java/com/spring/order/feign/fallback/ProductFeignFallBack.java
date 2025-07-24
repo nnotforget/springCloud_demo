@@ -3,7 +3,7 @@ package com.spring.order.feign.fallback;
 import java.math.BigDecimal;
 
 import com.spring.order.feign.ProductFeignClient;
-import com.spring.order.product.bean.Product;
+import com.spring.product.bean.Product;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 

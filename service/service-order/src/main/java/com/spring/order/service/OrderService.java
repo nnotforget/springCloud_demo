@@ -1,7 +1,7 @@
 package com.spring.order.service;
 
 
-import com.spring.order.order.bean.Order;
+import com.spring.order.bean.Order;
 
 public interface OrderService {
 

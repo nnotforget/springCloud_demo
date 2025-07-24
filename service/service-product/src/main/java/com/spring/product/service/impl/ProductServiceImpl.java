@@ -1,9 +1,8 @@
 package com.spring.product.service.impl;
-import com.spring.order.product.bean.Product;
+import com.spring.product.bean.Product;
 import java.math.BigDecimal;
 
 import com.spring.product.service.ProductService;
-import java.util.concurrent.TimeUnit;
 import org.springframework.stereotype.Service;
 
 @Service

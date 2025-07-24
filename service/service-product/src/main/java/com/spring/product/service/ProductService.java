@@ -1,7 +1,7 @@
 package com.spring.product.service;
 
 
-import com.spring.order.product.bean.Product;
+import com.spring.product.bean.Product;
 
 public interface ProductService {
 

@@ -13,6 +13,10 @@
     <modules>
         <module>service-product</module>
         <module>service-order</module>
+        <module>seata-account</module>
+        <module>seata-business</module>
+        <module>seata-order</module>
+        <module>seata-storage</module>
     </modules>
 
     <artifactId>service</artifactId>
@@ -48,6 +52,11 @@
         <dependency>
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-sentinel</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-seata</artifactId>
         </dependency>
 
         <dependency>

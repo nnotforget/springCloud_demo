@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ca93a6bd-a900-4817-a036-354171adb898" name="更改" comment="seata-初始化项目2">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-order/target/classes/application-feign.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-order/target/classes/com/spring/order/exception/OrderBlockExceptionHandler.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-order/target/classes/com/spring/order/feign/ProductFeignClient.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-order/target/classes/com/spring/order/feign/WeatherFeignClient.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-order/target/classes/com/spring/order/feign/fallback/ProductFeignFallBack.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-order/target/classes/com/spring/order/interceptor/XTokenRequestInterceptor.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-order/target/test-classes/com/spring/order/WeatherTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-product/target/classes/com/spring/product/controller/productController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-product/target/classes/com/spring/product/service/ProductService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-product/target/classes/com/spring/product/service/impl/ProductServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/seata-account/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/service/seata-account/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/seata-account/target/classes/mapper/AccountTblMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/seata-account/target/classes/mapper/AccountTblMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/seata-order/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/service/seata-order/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/seata-storage/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/service/seata-storage/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-order/target/classes/com/spring/order/controller/OrderController.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-order/target/classes/com/spring/order/controller/OrderController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-order/target/classes/com/spring/order/service/OrderService.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-order/target/classes/com/spring/order/service/OrderService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-order/target/classes/com/spring/order/service/impl/OrderServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-order/target/classes/com/spring/order/service/impl/OrderServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-order/target/test-classes/com/spring/order/OrderTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-order/target/test-classes/com/spring/order/OrderTest.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="directory" />
+      <option value="module" />
+      <option value="repository" />
+    </option>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;nnotforget&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/nnotforget/springCloud_demo.git&quot;,
+    &quot;accountId&quot;: &quot;1517519b-cfbe-46c5-859f-86519a39857a&quot;
+  }
+}</component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="$MAVEN_REPOSITORY$" />
+        <option name="userSettingsFile" value="$PROJECT_DIR$/../Java/settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="301o9hSq7zvJvNJlEngDN8ibnG7" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JUnit.OrderTest.orderTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ProductTest.NacosTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ProductTest.test.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.WeatherTest.queryWeather.executor&quot;: &quot;Debug&quot;,
+    &quot;Maven.seata-account [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.seata-business [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.seata-order [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.seata-order [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.springCloud_demo [install].executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;Spring Boot.GatewayMainApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.OrderMainApplication -2.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.OrderMainApplication-2.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.OrderMainApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.ProductMainApplication-2.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.ProductMainApplication-3.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.ProductMainApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.SeataAccountMainApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.SeataBusinessMainApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.SeataOrderMainApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.SeataStorageMainApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/zhaoyukun/IdeaProjects/springCloud_demo&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;/Users/zhaoyukun/IdeaProjects/springCloud_demo/gateway/src/main/java/com/spring/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;模块&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.39425287&quot;,
+    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
+    &quot;应用程序.Main.executor&quot;: &quot;Run&quot;
+  }
+}</component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/service/seata-order/src/main/java/com/spring/order/controller" />
+      <recent name="$PROJECT_DIR$/service/seata-order/src/main/java/com/spring/order/bean" />
+      <recent name="$PROJECT_DIR$/service/seata-order/src/main/java/com/spring/order" />
+      <recent name="$PROJECT_DIR$/service/service_order/src/main/java/com/spring" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.spring" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="KtorApplicationConfigurationType" />
+        <option value="MicronautRunConfigurationType" />
+        <option value="QuarkusRunConfigurationType" />
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+    <option name="hiddenConfigurations">
+      <map>
+        <entry key="SpringBootApplicationConfigurationType">
+          <value>
+            <set />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="shownConfigurations">
+      <map>
+        <entry key="SpringBootApplicationConfigurationType">
+          <value>
+            <set>
+              <option value="GatewayMainApplication" />
+              <option value="OrderMainApplication" />
+              <option value="ProductMainApplication" />
+              <option value="SeataAccountMainApplication" />
+              <option value="SeataBusinessMainApplication" />
+              <option value="SeataOrderMainApplication" />
+              <option value="SeataStorageMainApplication" />
+            </set>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="excludedNewTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.GatewayMainApplication">
+    <configuration name="GatewayMainApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="gateway" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.spring.GatewayMainApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.spring.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OrderMainApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="zulu-17" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <module name="service-order" />
+      <option name="PROGRAM_PARAMETERS" value="--server.port=8000" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.spring.OrderMainApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.spring.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductMainApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true">
+      <module name="service-product" />
+      <option name="PROGRAM_PARAMETERS" value="--server.port=9000" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.spring.ProductMainApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.spring.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SeataAccountMainApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="seata-account" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.spring.account.SeataAccountMainApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SeataBusinessMainApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="seata-business" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.spring.business.SeataBusinessMainApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SeataOrderMainApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="seata-order" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.spring.order.SeataOrderMainApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SeataStorageMainApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="seata-storage" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.spring.storage.SeataStorageMainApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Spring Boot.SeataAccountMainApplication" />
+      <item itemvalue="Spring Boot.SeataBusinessMainApplication" />
+      <item itemvalue="Spring Boot.SeataOrderMainApplication" />
+      <item itemvalue="Spring Boot.SeataStorageMainApplication" />
+      <item itemvalue="Spring Boot.GatewayMainApplication" />
+      <item itemvalue="Spring Boot.OrderMainApplication" />
+      <item itemvalue="Spring Boot.ProductMainApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.OrderMainApplication" />
+        <item itemvalue="Spring Boot.GatewayMainApplication" />
+        <item itemvalue="Spring Boot.ProductMainApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.23774.435" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="StructureViewState">
+    <option name="selectedTab" value="逻辑" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="ca93a6bd-a900-4817-a036-354171adb898" name="更改" comment="" />
+      <created>1752804292065</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1752804292065</updated>
+      <workItem from="1752804293125" duration="3799000" />
+      <workItem from="1752818219608" duration="15297000" />
+      <workItem from="1752927418680" duration="14548000" />
+      <workItem from="1753018291587" duration="17594000" />
+      <workItem from="1753141580189" duration="153000" />
+      <workItem from="1753141770582" duration="10000" />
+      <workItem from="1753141802746" duration="15000" />
+      <workItem from="1753141890741" duration="12418000" />
+      <workItem from="1753272748262" duration="7880000" />
+      <workItem from="1753316166725" duration="8259000" />
+      <workItem from="1753329149498" duration="74000" />
+    </task>
+    <task id="LOCAL-00001" summary="初始化">
+      <option name="closed" value="true" />
+      <created>1753013276560</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1753013276560</updated>
+    </task>
+    <task id="LOCAL-00002" summary="openFeign 注解">
+      <option name="closed" value="true" />
+      <created>1753075159616</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1753075159616</updated>
+    </task>
+    <task id="LOCAL-00003" summary="openFeign logger">
+      <option name="closed" value="true" />
+      <created>1753083901058</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1753083901058</updated>
+    </task>
+    <task id="LOCAL-00004" summary="openFeign 超时时间设置">
+      <option name="closed" value="true" />
+      <created>1753091400362</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1753091400362</updated>
+    </task>
+    <task id="LOCAL-00005" summary="openFeign 超时时间设置2">
+      <option name="closed" value="true" />
+      <created>1753091518722</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1753091518722</updated>
+    </task>
+    <task id="LOCAL-00006" summary="openFeign 重试机制">
+      <option name="closed" value="true" />
+      <created>1753097016389</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1753097016389</updated>
+    </task>
+    <task id="LOCAL-00007" summary="openFeign 拦截器">
+      <option name="closed" value="true" />
+      <created>1753098048895</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1753098048895</updated>
+    </task>
+    <task id="LOCAL-00008" summary="openFeign兜底 + sentinel">
+      <option name="closed" value="true" />
+      <created>1753101655434</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1753101655434</updated>
+    </task>
+    <task id="LOCAL-00009" summary="sentinel 流控">
+      <option name="closed" value="true" />
+      <created>1753149890476</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1753149890476</updated>
+    </task>
+    <task id="LOCAL-00010" summary="@SentinelResource流控异常处理">
+      <option name="closed" value="true" />
+      <created>1753227306493</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1753227306493</updated>
+    </task>
+    <task id="LOCAL-00011" summary="gateway-配置">
+      <option name="closed" value="true" />
+      <created>1753269587518</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1753269587518</updated>
+    </task>
+    <task id="LOCAL-00012" summary="gateway-配置2">
+      <option name="closed" value="true" />
+      <created>1753269604560</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1753269604560</updated>
+    </task>
+    <task id="LOCAL-00013" summary="gateway-自定义断言">
+      <option name="closed" value="true" />
+      <created>1753273915695</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1753273915695</updated>
+    </task>
+    <task id="LOCAL-00014" summary="gateway-路径重写">
+      <option name="closed" value="true" />
+      <created>1753275752941</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1753275752941</updated>
+    </task>
+    <task id="LOCAL-00015" summary="gateway-默认filter">
+      <option name="closed" value="true" />
+      <created>1753276131508</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1753276131508</updated>
+    </task>
+    <task id="LOCAL-00016" summary="gateway-GlobalFilter(全局filter)">
+      <option name="closed" value="true" />
+      <created>1753277558386</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1753277558386</updated>
+    </task>
+    <task id="LOCAL-00017" summary="gateway-自定义Filter">
+      <option name="closed" value="true" />
+      <created>1753313350802</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1753313350802</updated>
+    </task>
+    <task id="LOCAL-00018" summary="gateway-自定义Filter2">
+      <option name="closed" value="true" />
+      <created>1753313518908</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1753313518908</updated>
+    </task>
+    <task id="LOCAL-00019" summary="gateway-全局跨域">
+      <option name="closed" value="true" />
+      <created>1753313991725</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1753313991725</updated>
+    </task>
+    <task id="LOCAL-00020" summary="seata-初始化项目">
+      <option name="closed" value="true" />
+      <created>1753322916961</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1753322916961</updated>
+    </task>
+    <task id="LOCAL-00021" summary="seata-初始化项目2">
+      <option name="closed" value="true" />
+      <created>1753328903930</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1753328903930</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="初始化" />
+    <MESSAGE value="openFeign 注解" />
+    <MESSAGE value="openFeign logger" />
+    <MESSAGE value="openFeign 超时时间设置" />
+    <MESSAGE value="openFeign 超时时间设置2" />
+    <MESSAGE value="openFeign 重试机制" />
+    <MESSAGE value="openFeign 拦截器" />
+    <MESSAGE value="openFeign兜底 + sentinel" />
+    <MESSAGE value="sentinel 流控" />
+    <MESSAGE value="@SentinelResource流控异常处理" />
+    <MESSAGE value="gateway-配置" />
+    <MESSAGE value="gateway-配置2" />
+    <MESSAGE value="gateway-自定义断言" />
+    <MESSAGE value="gateway-路径重写" />
+    <MESSAGE value="gateway-默认filter" />
+    <MESSAGE value="gateway-GlobalFilter(全局filter)" />
+    <MESSAGE value="gateway-自定义Filter" />
+    <MESSAGE value="gateway-自定义Filter2" />
+    <MESSAGE value="gateway-全局跨域" />
+    <MESSAGE value="seata-初始化项目" />
+    <MESSAGE value="seata-初始化项目2" />
+    <option name="LAST_COMMIT_MESSAGE" value="seata-初始化项目2" />
+  </component>
+</project>

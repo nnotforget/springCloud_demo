@@ -7,7 +7,7 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 
-@EnableTransactionManagement
+@EnableTransactionManagement  //事务注解
 @MapperScan("com.spring.storage.mapper")
 @EnableDiscoveryClient
 @SpringBootApplication

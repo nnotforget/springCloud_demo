@@ -10,16 +10,14 @@ import org.springframework.transaction.annotation.Transactional;
 public class StorageServiceImpl implements StorageService {
 
     @Autowired
-    StorageTblMapper storageTblMapper;
+    private StorageTblMapper storageTblMapper;
 
-
-
-    @Transactional
+    @Transactional  //本地事务 方法上添加的注解
     @Override
     public void deduct(String commodityCode, int count) {
         storageTblMapper.deduct(commodityCode, count);
         if (count == 5) {
-            throw new RuntimeException("库存不足");
+            throw  new RuntimeException("库存不足");
         }
     }
 }

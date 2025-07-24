@@ -18,9 +18,7 @@ public class BusinessServiceImpl implements BusinessService {
     OrderFeignClient orderFeignClient;
 
 
-
-
-    @GlobalTransactional
+    @GlobalTransactional   //全局事务，核心注解
     @Override
     public void purchase(String userId, String commodityCode, int orderCount) {
         //1. 扣减库存

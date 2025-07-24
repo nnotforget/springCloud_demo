@@ -17,6 +17,7 @@ hs_err_pid*
 
 # ---> Maven
 target/
+classes/
 bin/
 pom.xml.tag
 pom.xml.releaseBackup

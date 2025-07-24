@@ -16,7 +16,7 @@ import org.springframework.context.annotation.Bean;
 
 @EnableFeignClients //开启openFeign 远程调用功能
 @SpringBootApplication
-@EnableDiscoveryClient
+@EnableDiscoveryClient  //注册发现nacos 注解
 public class OrderMainApplication {
 
     public static void main(String[] args) {

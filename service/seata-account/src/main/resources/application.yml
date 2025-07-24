@@ -17,5 +17,16 @@ server:
 
 mybatis:
   mapper-locations: classpath:mapper/*.xml
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
 #seata:
 #  data-source-proxy-mode: XA
+
+#Log
+#  logging.level.root=info
+#  logging.level.cn.enn.greatgas=info
+#  mybatis.configuration.log-impl=org.apache.ibatis.logging.nologging.NoLoggingImpl
+logging:
+  level:
+    root: info
+#mybatis-plus.configuration.log-impl=org.apache.ibatis.logging.stdout.StdOutImpl
